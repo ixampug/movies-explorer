@@ -1,0 +1,124 @@
+.profile {
+  margin: 74px auto 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+}
+
+.profile__title {
+  margin-bottom: 123px;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.profile___form {
+  width: 100%;
+  line-height: 13px;
+  font-size: 11px;
+}
+
+.profile__line {
+  border-bottom: 1px solid #424242;
+  width: 100%;
+}
+
+.profile__value {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.profile__label {
+  color: #FFF;
+  line-height: normal;
+  display: block;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.profile__input {
+  border: none;
+  text-align: right;
+  width: 80%;
+  outline: none;
+  background-color: #202020;
+  color: #FFF;
+  text-align: right;
+  line-height: normal;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profile__footer {
+  margin-top: 204px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.profile__edit {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  line-height: normal;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profile__logout {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #EE3465;
+  line-height: normal;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    margin-top: 236px;
+  }
+}
+
+@media (max-width: 540px) {
+  .profile {
+    margin: 70px 30px 0;
+  }
+  .profile__footer {
+    margin-top: 379px;
+  }
+}
+
+.registration__error {
+  margin-bottom: 4px;
+  height: 12px;
+  line-height: 12px;
+  color: #EE3465;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.profile__edit_disabled {
+  border: none;
+  background: none;
+  pointer-events: none;
+  color: #8B8B8B;
+  line-height: normal;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}

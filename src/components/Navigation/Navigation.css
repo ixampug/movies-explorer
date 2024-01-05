@@ -1,0 +1,94 @@
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+
+.menu_visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 68%;
+    height: 100%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__close {
+    top: 23px;
+    right: 23px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    background-image: url('/src/images/Cross__close.svg');
+    position: absolute;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu__open {
+    margin-top: 159px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.menu-link {
+    text-decoration: none;
+    line-height: 22px;
+    padding-bottom: 6px;
+    color: #fff;
+    transition: 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.menu-link_active {
+    text-decoration: none;
+    line-height: 22px;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.menu__account {
+    padding: 8px 20px;
+    line-height: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #313131;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 90px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .menu__container {
+        width: 100vw;
+    }
+}
