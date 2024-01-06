@@ -2,16 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './MovieCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import { useLocation } from 'react-router-dom';
-import {
-  NEXT_MOBILE_SCREEN_MOVIES,
-  NEXT_PC_SCREEN_MOVIES,
-  NEXT_TABLET_SCREEN_MOVIES,
-  PC_DISPLAY,
-  TABLET_DISPLAY,
-  PC_SCREEN,
-  TABLET_SCREEN,
-  MOBILE_SCREEN,
-} from '../../utils/constants';
+
 import Preloader from '../Preloader/Preloader';
 
 export default function MovieCardList({
@@ -31,23 +22,23 @@ export default function MovieCardList({
 
   function setDisplayedMoviesCount() {
     const display = window.innerWidth;
-    if (display > PC_DISPLAY) {
-      setDisplayedMovies(PC_SCREEN);
-    } else if (display > TABLET_DISPLAY) {
-      setDisplayedMovies(TABLET_SCREEN);
+    if (display > 1240) {
+      setDisplayedMovies(12);
+    } else if (display > 707) {
+      setDisplayedMovies(8);
     } else {
-      setDisplayedMovies(MOBILE_SCREEN);
+      setDisplayedMovies(4);
     }
   }
 
   function expandMoviesDisplay() {
     const display = window.innerWidth;
-    if (display > PC_DISPLAY) {
-      setDisplayedMovies(displayedMovies + NEXT_PC_SCREEN_MOVIES);
-    } else if (display > TABLET_DISPLAY) {
-      setDisplayedMovies(displayedMovies + NEXT_TABLET_SCREEN_MOVIES);
+    if (display > 1240) {
+      setDisplayedMovies(displayedMovies + 3);
+    } else if (display > 707) {
+      setDisplayedMovies(displayedMovies + 3);
     } else {
-      setDisplayedMovies(displayedMovies + NEXT_MOBILE_SCREEN_MOVIES);
+      setDisplayedMovies(displayedMovies + 3);
     }
   }
 

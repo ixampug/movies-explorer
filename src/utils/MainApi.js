@@ -1,8 +1,9 @@
 import { backUrl } from "./constants";
 import { checkResponse } from "./constants";
+import { testUrl } from "./constants";
 
 export const register = async (name, email, password) => {
-  const res = await fetch(`${backUrl}/signup`, {
+  const res = await fetch(`${testUrl}/signup`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -14,7 +15,7 @@ export const register = async (name, email, password) => {
 };
 
 export const authorize = async (email, password) => {
-  const res = await fetch(`${backUrl}/signin`, {
+  const res = await fetch(`${testUrl}/signin`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -26,7 +27,7 @@ export const authorize = async (email, password) => {
 };
 
 export const getUsersContent = async (token) => {
-  const res = await fetch(`${backUrl}/users/me`, {
+  const res = await fetch(`${testUrl}/users/me`, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -38,7 +39,7 @@ export const getUsersContent = async (token) => {
 };
 
 export const getProfileInfo = async () => {
-  const res = await fetch(`${backUrl}/users/me`, {
+  const res = await fetch(`${testUrl}/users/me`, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -50,7 +51,7 @@ export const getProfileInfo = async () => {
 };
 
 export const patchProfileInfo = async (data) => {
-  const res = await fetch(`${backUrl}/users/me`, {
+  const res = await fetch(`${testUrl}/users/me`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -65,7 +66,7 @@ export const patchProfileInfo = async (data) => {
 };
 
 export const getSavedMovies = async () => {
-  const res = await fetch(`${backUrl}/movies`, {
+  const res = await fetch(`${testUrl}/movies`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -76,7 +77,7 @@ export const getSavedMovies = async () => {
 };
 
 export const saveMovie = async (data) => {
-  const res = await fetch(`${backUrl}/movies`, {
+  const res = await fetch(`${testUrl}/movies`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -101,7 +102,7 @@ export const saveMovie = async (data) => {
 };
 
 export const removeMovie = async (movieId) => {
-  const res = await fetch(`${backUrl}/movies/${movieId}`, {
+  const res = await fetch(`${testUrl}/movies/${movieId}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",

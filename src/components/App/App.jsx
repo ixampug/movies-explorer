@@ -116,22 +116,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    const jwt = localStorage.getItem("jwt");
-    if (jwt) {
-      mainApi
-        .getUsersContent(jwt)
-        .then((res) => {
-          localStorage.removeItem("allMovies");
-          setIsLoggedIn(true);
-          navigate(path);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
-  }, []);
-
-  useEffect(() => {
     localStorage.removeItem("shortMovies");
     const jwt = localStorage.getItem("jwt");
     if (isLoggedIn && jwt) {
