@@ -146,7 +146,7 @@ export default function App() {
           />
           <Route path={"*"} element={<NotFoundPage />} />
           <Route
-            path={"/sign-up"}
+            path={"/signup"}
             element={
               isLoggedIn ? (
                 <Navigate to="/movies" replace />
@@ -159,7 +159,7 @@ export default function App() {
             }
           />
           <Route
-            path={"/sign-in"}
+            path={"/signin"}
             element={
               isLoggedIn ? (
                 <Navigate to="/movies" replace />
