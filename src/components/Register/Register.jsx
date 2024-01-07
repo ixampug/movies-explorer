@@ -76,7 +76,7 @@ export default function Register({ onRegister }) {
       <div className="registration__footer">
         <span>
           Уже зарегистрированы?
-          <Link className="registration__link" to="/sign-in">
+          <Link className="registration__link" to="/signin">
             Войти
           </Link>
         </span>

@@ -39,10 +39,10 @@ export default function Header({ isLoggedIn }) {
         ) : (
           <>
             <div className="header__links">
-              <Link className="header__link header__link_reg" to="/sign-up">
+              <Link className="header__link header__link_reg" to="/signup">
                 Регистрация
               </Link>
-              <Link className="header__link header__link_log" to="/sign-in">
+              <Link className="header__link header__link_log" to="/signin">
                 <button className="header__button">Войти</button>
               </Link>
             </div>

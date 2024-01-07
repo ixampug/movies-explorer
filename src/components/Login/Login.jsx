@@ -58,7 +58,7 @@ export default function Login({ onAuthorization }) {
       <div className="login__footer">
         <span>
           Еще не зарегистрированы?
-          <Link className="login__link" to="/sign-up">
+          <Link className="login__link" to="/signup">
             Регистрация
           </Link>
         </span>
