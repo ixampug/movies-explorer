@@ -1,0 +1,166 @@
+.student {
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 507px;
+}
+@media (max-width: 1300px) {
+  .student {
+    margin: 0 50px;
+  }
+}
+
+.student__title {
+  margin-bottom: 66px;
+  margin-top: 110px;
+  display: block;
+  line-height: 27px;
+  color: #fff;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #fff;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.student__content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.student__info {
+  width: 50%;
+}
+
+.student__name {
+  margin-bottom: 18px;
+  display: block;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 50px;
+}
+.student__link {
+  line-height: 17px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.student__job {
+  margin-bottom: 26px;
+  display: block;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.student__bio {
+  margin-bottom: 99px;
+  display: block;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.student__link:first-of-type {
+  margin-right: 20px;
+}
+
+.student__link:hover {
+  opacity: 0.7;
+}
+
+.student__photo {
+  width: 270px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .student__photo {
+    width: 255px;
+    height: 307px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .student__name {
+    color: #fff;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .student__job {
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .student__bio {
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .student__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 540px) {
+  .student {
+    margin: 0 14px;
+  }
+
+  .student__photo {
+    margin: 0 14px 40px;
+    max-width: 292px;
+    height: 352px;
+  }
+
+  .student__content {
+    flex-direction: column;
+  }
+
+  .student__info {
+    order: 2;
+    width: 100%;
+  }
+
+  .student__name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .student__job {
+    color: #fff;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .student__bio {
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .student__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

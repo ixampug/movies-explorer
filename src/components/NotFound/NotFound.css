@@ -1,0 +1,42 @@
+.page__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 400px;
+}
+
+.page__info-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__status {
+  margin-bottom: 5px;
+  line-height: 169px;
+  display: block;  
+  font-weight: 400;
+  font-size: 140px;
+}
+
+.page__not-found {
+  line-height: 19px;
+  text-align: center;  
+  font-size: 16px;
+}
+
+.page__link {
+  margin: 184px auto;  
+  color: #4285F4;
+  text-decoration: none;
+  line-height: 17px;
+  transition: 0.3s ease;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+}
+
+.page__link:hover {
+    opacity: 0.8;
+}

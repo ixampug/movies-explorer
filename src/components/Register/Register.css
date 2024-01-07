@@ -1,0 +1,137 @@
+.registration {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 396px;
+}
+
+.registration__header {
+  margin-bottom: 40px;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.registration__logo {
+  margin-bottom: 40px;
+  width: 38px;
+  height: 38px;
+}
+
+.registration__title {
+  margin: 0;
+  padding: 0;
+  line-height: 29px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.registration__label {
+  margin-bottom: 10px;
+  color: #8B8B8B;
+  line-height: normal;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.registration__input {
+  margin-bottom: 4px;
+  background-color: #2F2F2F;
+  line-height: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: calc(100% - 30px);
+  padding: 15px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.registration__error {
+  margin-bottom: 4px;
+  height: 12px;
+  line-height: 12px;
+  color: #EE3465;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.registration__button {
+  margin-top: 69px;
+  margin-bottom: 16px;
+  background-color: #4285F4;
+  border: none;
+  border-radius: 3px;
+  line-height: 17px;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 13px 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.registration__button_disabled {
+  margin-top: 69px;
+  margin-bottom: 16px;
+  background: #F8F8F8;
+  border: none;
+  border-radius: 3px;
+  line-height: 17px;
+  color: #C2C2C2;
+  width: 100%;
+  text-align: center;
+  padding: 13px 0 15px;
+  pointer-events: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.registration__footer {
+  color: #8B8B8B;
+  line-height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.registration__link {
+  margin-left: 6px;
+  color: #4285F4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .registration__header {
+    margin-top: 232px;
+  }
+}
+
+@media (max-width: 440px) {
+  .registration {
+    margin: 0 30px;
+    align-items: center;
+  }
+  .registration__header {
+    margin: 56px auto 80px;
+  }
+  .registration__logo {
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .registration__title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
